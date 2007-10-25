@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE CodeBlocks_layout_file>
+<CodeBlocks_layout_file>
+	<File name="SFE.cpp" open="1" top="1">
+		<Cursor position="4570" topLine="107"/>
+	</File>
+	<File name="SFE.h" open="1" top="0">
+		<Cursor position="1237" topLine="31"/>
+	</File>
+	<File name="SFE_Char.cpp" open="1" top="0">
+		<Cursor position="0" topLine="0"/>
+	</File>
+	<File name="SFE_Char.h" open="1" top="0">
+		<Cursor position="538" topLine="0"/>
+	</File>
+	<File name="SFE_FontMap.cpp" open="1" top="0">
+		<Cursor position="239" topLine="1"/>
+	</File>
+	<File name="SFE_FontMap.h" open="1" top="0">
+		<Cursor position="812" topLine="3"/>
+	</File>
+	<Expand folder="/Sources"/>
+	<Expand folder="/Headers"/>
+</CodeBlocks_layout_file>
