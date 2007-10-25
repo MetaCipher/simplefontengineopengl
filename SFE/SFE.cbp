@@ -1,0 +1,61 @@
+<?xml version="1.0"?>
+<!DOCTYPE CodeBlocks_project_file>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="1"/>
+	<Project>
+		<Option title="SFE"/>
+		<Option makefile="Makefile"/>
+		<Option makefile_is_custom="0"/>
+		<Option compiler="0"/>
+		<Build>
+			<Target title="default">
+				<Option output="lib\libSFE.a"/>
+				<Option working_dir=""/>
+				<Option object_output="obj"/>
+				<Option deps_output="dep"/>
+				<Option type="2"/>
+				<Option compiler="0"/>
+				<Option projectResourceIncludeDirsRelation="2"/>
+				<Compiler>
+					<Add directory="FreeType\include"/>
+				</Compiler>
+				<Linker>
+					<Add directory="FreeType\objs"/>
+				</Linker>
+			</Target>
+		</Build>
+		<Linker>
+			<Add library="FreeType\objs\libfreetype.a"/>
+		</Linker>
+		<Unit filename="SFE.cpp">
+			<Option compilerVar="CPP"/>
+			<Option target="default"/>
+		</Unit>
+		<Unit filename="SFE.h">
+			<Option compilerVar=""/>
+			<Option compile="0"/>
+			<Option link="0"/>
+			<Option target="default"/>
+		</Unit>
+		<Unit filename="SFE_Char.cpp">
+			<Option compilerVar="CPP"/>
+			<Option target="default"/>
+		</Unit>
+		<Unit filename="SFE_Char.h">
+			<Option compilerVar=""/>
+			<Option compile="0"/>
+			<Option link="0"/>
+			<Option target="default"/>
+		</Unit>
+		<Unit filename="SFE_FontMap.cpp">
+			<Option compilerVar="CPP"/>
+			<Option target="default"/>
+		</Unit>
+		<Unit filename="SFE_FontMap.h">
+			<Option compilerVar=""/>
+			<Option compile="0"/>
+			<Option link="0"/>
+			<Option target="default"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

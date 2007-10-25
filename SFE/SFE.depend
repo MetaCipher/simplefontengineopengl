@@ -1,0 +1,37 @@
+# depslib dependency file v1.0
+1193245635 c:\development\sfe\sfe.cpp
+	"SFE.h"
+
+1193245631 c:\development\sfe\sfe.h
+	<windows.h>
+	<gl/gl.h>
+	<ft2build.h>
+	<string>
+	<iostream>
+	<vector>
+	"SFE_FontMap.h"
+	"SFE_Char.h"
+
+1143221728 c:\development\sfe\freetype\include\ft2build.h
+	<freetype/config/ftheader.h>
+
+1168359656 c:\development\sfe\freetype\include\freetype\config\ftheader.h
+
+1193244245 c:\development\sfe\sfe_char.cpp
+	"SFE_Char.h"
+
+1193244220 c:\development\sfe\sfe_char.h
+	<windows.h>
+	<gl/gl.h>
+
+1193245699 c:\development\sfe\sfe_fontmap.cpp
+	"SFE_FontMap.h"
+
+1193245603 c:\development\sfe\sfe_fontmap.h
+	<windows.h>
+	<gl/gl.h>
+	<ft2build.h>
+	<string>
+	<iostream>
+	"SFE_Char.h"
+
