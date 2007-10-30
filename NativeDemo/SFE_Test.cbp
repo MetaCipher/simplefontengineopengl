@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<!DOCTYPE CodeBlocks_project_file>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="1"/>
+	<Project>
+		<Option title="SFE_Test"/>
+		<Option makefile="Makefile"/>
+		<Option makefile_is_custom="0"/>
+		<Option compiler="0"/>
+		<Build>
+			<Target title="default">
+				<Option output="bin\SFE_Test.exe"/>
+				<Option working_dir="bin"/>
+				<Option object_output="obj"/>
+				<Option deps_output="dep"/>
+				<Option type="0"/>
+				<Option compiler="0"/>
+				<Option projectResourceIncludeDirsRelation="0"/>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add directory="..\SFE"/>
+			<Add directory="..\SFE\FreeType\include"/>
+			<Add directory="C:\Development\Libraries\SDL\include"/>
+		</Compiler>
+		<Linker>
+			<Add library="mingw32"/>
+			<Add library="SDLmain"/>
+			<Add library="SDL"/>
+			<Add library="SFE"/>
+			<Add library="freetype"/>
+			<Add library="opengl32"/>
+			<Add library="glu32"/>
+			<Add directory="..\SFE\lib"/>
+			<Add directory="C:\Development\SFE\FreeType\objs"/>
+			<Add directory="C:\Development\Libraries\SDL\lib"/>
+		</Linker>
+		<Unit filename="main.cpp">
+			<Option compilerVar="CPP"/>
+			<Option target="default"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>
