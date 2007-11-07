@@ -17,12 +17,15 @@
 #include <iostream>
 #include <vector>
 
+#include "ISimpleFont.h"
 #include "SFE_FontMap.h"
 #include "SFE_Char.h"
 
 //=============================================================================
-namespace DevThinkTank {
-	class SFE {
+namespace DevThinkTank 
+{
+	class SFE : ISimpleFont
+	{
 	    public:
             std::vector<SFE_FontMap>    FontMaps;
 
