@@ -173,6 +173,10 @@
 	</References>
 	<Files>
 		<File
+			RelativePath=".\Bitmap.cpp"
+			>
+		</File>
+		<File
 			RelativePath=".\Helper.hpp"
 			>
 		</File>

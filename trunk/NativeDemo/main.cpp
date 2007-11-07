@@ -1,3 +1,4 @@
+
 #include "Helper.hpp"
 
 #pragma comment(linker, "/SUBSYSTEM:windows /ENTRY:Demo")

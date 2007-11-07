@@ -510,6 +510,10 @@
 			</Filter>
 		</Filter>
 		<File
+			RelativePath=".\ISimpleFont.h"
+			>
+		</File>
+		<File
 			RelativePath=".\SFE.cbp"
 			>
 		</File>
