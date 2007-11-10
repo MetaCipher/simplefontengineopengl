@@ -5,7 +5,7 @@
 //		Tim Jones
 //=============================================================================
 #ifndef _DTT_SFE_H_
-    #define _DTT_SFE_H_
+#define _DTT_SFE_H_
 
 #include <windows.h>
 #include <gl/gl.h>
@@ -24,46 +24,41 @@
 //=============================================================================
 namespace DevThinkTank 
 {
-	class SFE : ISimpleFont
+	class SFE_API SFE : public ISimpleFont
 	{
-	    public:
-            std::vector<SFE_FontMap>    FontMaps;
+	public:
+		// ---- Fields ----
+		std::vector<SFE_FontMap>    FontMaps;
 
-		private:
-			FT_Library	    Library;
+	protected:
+		FT_Library	    Library;
+		FT_Face         FontFace;
+		FT_GlyphSlot    GlyphSlot;
 
-			FT_Face         FontFace;
+	public:
+		// ---- Constructors/Destructor ----
+		SFE();
+		virtual ~SFE();
 
-			FT_GlyphSlot    GlyphSlot;
+		// ---- Properties ----
+		virtual void SetFontPointSize(int Point);
+		virtual void SetFontPixelSize(int Pixels);
 
-		//Constructors
-		public:
-			SFE();
-			~SFE();
+		// ---- Functions ----
 
-		//Loading Routines
-		public:
-            bool OnInit();
+		// Loading Routines
+		virtual bool OnInit();
+		virtual bool OnLoad(std::string File);
+		virtual void OnLoadFontmap(int PointSize);
 
-			bool OnLoad(std::string File);
+		// Rendering Routines
+		virtual void OnRender(int PointSize, int X, int Y, std::string Text);
 
-			void OnLoadFontmap(int PointSize);
+		// Cleanup
+		virtual void OnCleanup();
 
-		//Rendering Routines
-		public:
-			void OnRender(int PointSize, int X, int Y, std::string Text);
-
-		//Cleanup
-		public:
-			void OnCleanup();
-
-        public:
-            void SetFontPointSize(int Point);
-
-            void SetFontPixelSize(int Pixels);
-
-        private:
-            int NextPowerTwo(int X);
+	protected:
+		int NextPowerTwo(int X);
 	};
 };
 

@@ -69,7 +69,7 @@ bool OnInit()
 	}
 
     //Preload PointSize fonts
-    FontEngine.OnLoadFontmap(16);
+	FontEngine.OnLoadFontmap(16);
 	FontEngine.OnLoadFontmap(32);
 
     //Switch to a different font
